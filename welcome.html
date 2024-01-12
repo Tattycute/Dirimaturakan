@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-image: url('larawan.png');
+            background-size: cover;
+            padding: 20px 40px;
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 0.7;
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px; /* Adjust the size as needed */
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 16px;
+        }
+
+        .previous {
+            background-color: #80ced6;
+            color: black;
+            float: left;
+            border-radius: 20px;
+        }
+
+        .next {
+            background-color: #80ced6;
+            color: black;
+            float: right;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: #5F9EA0;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <img src="images.png" style="float: right; width: 100px; height: 100px;" />
+    <img src="example.png" style="float: right; width: 100px; height: 100px;" />
+    <img src="picture.png" style="float: left; width: 100px; height: 100px;" />
+
+    <h1>Republic of the Philippines</h1>
+    <h1>City of Silag</h1>
+    <h1>Office of Barangay Diri Maturakan</h1>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Welcome to Barangay Diri Maturakan!</h1>
+    <p>The Barangay Portal is a single window uniting all web-based Barangay content to maximize efficiency and provide rapid, high-quality service to citizens. As part of the plan of the Barangay Diri Maturakan to slowly transition all the business processes and transactions online, various application forms for individual,certification and others use are now available for download online. Barangay is committed to providing its constituents with an easy, fast, and hassle-free transaction experience.</p>
+
+
+    <br>
+    <br>
+    <br>
+    <!-- Existing form fields -->
+
+    <!-- "Previous" link -->
+    <a href="#" class="previous" onclick="navigate('LOGIN.html')">Previous</a>
+
+    <!-- "Next" link -->
+    <a href="#" class="next" onclick="navigate('services.html')">Next</a>
+
+    <button type="button" onclick="alert('Welcome to our official website! we are delighted to extend our warmest greetings. The barangay is the smallest political unit in the Philippines. Each municipality or city is therefore made up of barangays. The barangay government unit is composed of elective officials called the Punong Barangay who is the chief executive, the Sangguniang Barangay members, also called Kagawads, and the Sangguniang Kabataan Chairman. The appointive officials are the barangay Secretary, the barangay Treasurer, the members of the Lupong Tagapamayapa, and the barangay Tanods. The primary requisite for the creation of a barangay is a population of at least 2,000. But for highly urbanized cities, a minimum of 5,000 inhabitants is required. The creation of a barangay is done by law or an ordinance of the Sangguniang Panlalawigan or Sangguniang Panlungsod, and has to be ratified by the affected voting population through a plebiscite.!')">About brg.ph</button>
+
+    <script>
+        // JavaScript function to handle navigation
+        function navigate(destination) {
+            window.location.href = destination;
+        }
+    </script>
+</body>
+
+</html>

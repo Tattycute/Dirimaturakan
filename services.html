@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <style>
+        body {
+            background: #f0f0f0 url('background.png') center/cover no-repeat;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .update-section {
+            background-color: #ecf0f1; /* Light gray background color */
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .update-section h2 {
+            color: #3498db; /* Blue color for the heading */
+            text-align: center;
+        }
+
+        .update-section p {
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .update-section form {
+            text-align: center;
+        }
+
+        .update-section label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .update-section button {
+            background-color: #3498db; /* Blue background color for the button */
+            color: #fff; /* White text color for the button */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .update-section button:hover {
+            background-color: #2980b9; /* Darker blue color on hover */
+        }
+
+        .certificate-container {
+            background-color: #f44336;
+            text-align: center;
+            display: block;
+            margin: 15px;
+            padding: 20px;
+            background-color: #3498db;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .download-link {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="images.png" alt="Image 1" style="float: right; width: 100px; height: 100px;" />
+    <img src="example.png" alt="Image 2" style="float: right; width: 100px; height: 100px;" />
+    <img src="picture.png" alt="Image 3" style="float: left; width: 100px; height: 100px;" />
+
+
+    <header class="header">
+        <h1>Republic of the Philippines</h1>
+        <h1>City of Silag</h1>
+        <h1>Office of the Barangay Diri Maturakan</h1>
+    </header>
+
+    <div class="update-section">
+        <h2>Terms and Conditions Update</h2>
+
+        <p> Our <strong>Terms and Conditions</strong> and <strong>Privacy Policy</strong> have recently update. To continue using our wibsite services, plese check abd review the details and agree to our updated terms.</p>
+
+
+        <form action="next.html" method="post">
+            <label>
+                <input type="checkbox" name="agree" required> I have read and agree to the Terms:
+            </label>
+
+            <br>
+
+            <button type="button" onclick="alert('Your Succesfully Agreed the legal Terms and Condition! Your information in the given form will be treated with utmost confidentiality. Any information collected from you will be used in the Database management. Also, your safety is also my primary concern. It ensures that there will be no risk to encounter during the process of data collection..')">Continue</button>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="certificate-container">
+        <a href="https://docs.google.com/document/d/1JunfefiaQcmD-FyYft9SxX8i6LbTtpw9/edit"
+            class="download-link" download><strong>BARANGAY CLEARANCE</strong></a>
+    </div>
+
+    <div class="certificate-container">
+        <a href="https://docs.google.com/document/d/1lehCMAlizzH-4sZ7-0LjZKmTXVRS-Wmn/edit"
+            class="download-link"><strong>CERTIFICATE OF INDIGENCY</strong></a>
+    </div>
+
+    <div class="certificate-container">
+        <a href="https://docs.google.com/document/d/1IIy0uZvVaQdEU-eIagxaWbSWKjRm2iXb/edit"
+            class="download-link"><strong>CERTIFICATE OF RESIDENCY</strong></a>
+    </div>
+
+    <div class="certificate-container">
+        <a href="https://docs.google.com/document/d/1G1MOb4Xup1B8Y3_SRB5MwCZk82suOPvB/edit"
+            class="download-link"><strong>CERTIFICATE OF LOW INCOME</strong></a>
+    </div>
+
+    <div class="certificate-container">
+        <a href="https://docs.google.com/document/d/1jnS38wQJRYofCTPQeN3ojQegrbCwZmW1/edit"
+            class="download-link"><strong>CERTIFICATE OF INDIGENCE</strong></a>
+    </div>
+
+    
+
+</body>
+
+</html>

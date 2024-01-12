@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url('background.png');
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 0.7;
+        }
+
+        form {
+            text-align: center;
+            width: 60%;
+            padding: 50px;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 70%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: none;
+            background-color: #ADD8E6;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            border-radius: 50px;
+            position: relative;
+            width: 15%;
+        }
+
+        .container {
+            /* Additional styles for the container if needed */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="images.png" style="float: right; width: 100px; height: 100px;" />
+    <img src="example.png" style="float: right; width: 100px; height: 100px;" />
+    <img src="picture.png" style="float: left; width: 100px; height: 100px;" />
+
+    <h1> Republic of the Philippines </h1>
+    <h1> City of Silag </h1>
+    <h1> Office of the Barangay Diri Maturakan</h1>
+
+    <form on submit="return validateLogin()" action="welcome.html" method="post">
+        <div class="container">
+            <center>
+                <h2> USER LOGIN</h2>
+            </center>
+            
+            <br>
+            <label>Email Account: </label>
+            
+            <br>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <br>
+            <label>Password: </label>
+            
+            <br>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <br>
+            <!-- Existing form fields -->
+
+            <!-- Add a link for "Forgot Password" -->
+            <a id="forgot-password-link" href="forgot_password.html">Forgot Password</a>
+
+            <br>
+            <!-- Existing form buttons -->
+
+            <br>
+            <button type="submit">LOGIN</button>
+            <br>
+            <a id="create-account-link" href="create_account.html">Create Account</a>
+
+
+        </div>
+    </form>
+    <script>
+        function validateLogin() {
+            // Simulate client-side validation
+            var username = document.getElementsByName("username")[0].value;
+            var password = document.getElementsByName("password")[0].value;
+
+            // In a real scenario, perform server-side validation here
+            if (username === "demo" && password === "password") {
+                alert("Login successful!");
+                return true; // Allow form submission
+            } else {
+                alert("Invalid credentials. Please try again.");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+
+</html>
